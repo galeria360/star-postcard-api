@@ -1,15 +1,19 @@
 import { ImageResponse } from '@vercel/og';
-import { NextRequest } from 'next/server';
 
-export const config = { runtime: 'nodejs' };
+export const config = {
+runtime: 'nodejs'
+};
 
-export default function handler(req: NextRequest) {
+export default function handler() {
 return new ImageResponse(
 (
-<div style={{ height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#f97316', color: 'white', fontSize: 60, fontWeight: 'bold' }}>
-PROJEKT DZIAŁA! ⭐
+<div style={{ fontSize: 60, color: 'white', background: 'orange', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+DZIALA! ⭐⭐⭐⭐⭐
 </div>
 ),
-{ width: 600, height: 400 }
+{
+width: 600,
+height: 400
+}
 );
 }
