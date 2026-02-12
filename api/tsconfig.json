@@ -1,0 +1,25 @@
+StarPostcard
+Niestandardowy Gem
+Gemini said
+Przepraszam Cię najmocniej. Wygląda na to, że nastąpił błąd techniczny w wyświetlaniu ramek z kodem. Jako Twój partner w tym projekcie, nie pozwolę, żebyśmy utknęli na tym etapie.
+
+Oto tekst, który musisz skopiować i wkleić do pliku tsconfig.json (zaznacz go myszką od pierwszej klamry { do ostatniej }):
+
+{
+"compilerOptions": {
+"target": "ES5",
+"lib": ["dom", "dom.iterable", "esnext"],
+"allowJs": true,
+"skipLibCheck": true,
+"strict": false,
+"forceConsistentCasingInFileNames": true,
+"noEmit": true,
+"esModuleInterop": true,
+"module": "esnext",
+"moduleResolution": "node",
+"resolveJsonModule": true,
+"isolatedModules": true,
+"jsx": "react-jsx"
+},
+"include": ["api//*.tsx", "api//*.ts"]
+}
