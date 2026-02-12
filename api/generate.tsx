@@ -1,7 +1,33 @@
 import { ImageResponse } from '@vercel/og';
 
 export const config = {
-runtime: 'edge',
+runtime: 'nodejs'
 };
 
-export default function () { return new ImageResponse( ( <div style={{ display: 'flex', fontSize: 60, color: 'white', background: 'orange', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', }} > DZIAŁA! ⭐⭐⭐⭐⭐ </div> ), { width: 600, height: 400, } ); }
+export default function handler() {
+try {
+return new ImageResponse(
+(
+<div style={{
+height: '100%',
+width: '100%',
+display: 'flex',
+flexDirection: 'column',
+alignItems: 'center',
+justifyContent: 'center',
+backgroundColor: '#f97316',
+color: 'white'
+}}>
+<h1 style={{ fontSize: 60 }}>DZIAŁA! ⭐⭐⭐⭐⭐</h1>
+<p style={{ fontSize: 30 }}>Silnik Node.js aktywny</p>
+</div>
+),
+{
+width: 600,
+height: 400,
+}
+);
+} catch (e) {
+return new Response(Błąd: ${e.message}, { status: 500 });
+}
+}
