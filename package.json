@@ -5,7 +5,6 @@
 "dependencies": {
 "next": "latest",
 "react": "latest",
-"react-dom": "latest",
-"satori": "latest"
+"react-dom": "latest"
 }
 }
