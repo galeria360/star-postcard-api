@@ -1,7 +1,16 @@
 {
-  "name": "star-postcard-api",
-  "version": "1.0.0",
-  "dependencies": {
-    "@vercel/og": "latest"
-  }
+"name": "star-postcard-api",
+"version": "1.0.0",
+"scripts": {
+"dev": "next dev",
+"build": "next build",
+"start": "next start"
+},
+"dependencies": {
+"@vercel/og": "latest",
+"next": "latest",
+"react": "latest",
+"react-dom": "latest",
+"lucide-react": "latest"
+}
 }
