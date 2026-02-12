@@ -3,6 +3,8 @@
 "version": "1.0.0",
 "dependencies": {
 "@vercel/og": "latest",
-"react": "latest"
+"next": "latest",
+"react": "latest",
+"react-dom": "latest"
 }
 }
