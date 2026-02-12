@@ -3,9 +3,9 @@
 "version": "1.0.0",
 "type": "module",
 "dependencies": {
-"@vercel/og": "latest",
 "next": "latest",
 "react": "latest",
-"react-dom": "latest"
+"react-dom": "latest",
+"satori": "latest"
 }
 }
